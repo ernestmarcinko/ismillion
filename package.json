@@ -1,0 +1,29 @@
+{
+	"name": "is-million",
+	"version": "1.0",
+	"description": "Simple and very powerful library to test if a number is one million.",
+	"main": "ismillion.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"prepublish": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ernestmarcinko/ismillion.git"
+	},
+	"files": [
+		"ismillion.js",
+		"readme.md"
+	],
+	"keywords": [
+		"is million"
+	],
+	"author": "Ernest Marcinko",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ernestmarcinko/ismillion/issues"
+	}
+}
