@@ -1,14 +1,11 @@
 {
 	"name": "is-million",
-	"version": "1.0",
+	"version": "0.9",
 	"description": "Simple and very powerful library to test if a number is one million.",
 	"main": "ismillion.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "tsc",
-		"dev": "tsc --watch",
-		"prepublish": "tsc"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
