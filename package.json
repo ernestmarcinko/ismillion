@@ -1,6 +1,6 @@
 {
 	"name": "is-million",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple and very powerful library to test if a number is one million.",
 	"main": "ismillion.js",
 	"type": "module",
