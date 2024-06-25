@@ -2,11 +2,11 @@
 Very powerful package to check if a number is one million.
 
 ```shell
-npm install ismillion
+npm install is-million
 ```
 
 ```javascript
-import isMillion from "ismillion";
+import isMillion from "is-million";
 
 if ( isMillion(1000000) ) {
 	console.log('It is one million.');
