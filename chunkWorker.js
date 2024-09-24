@@ -2,7 +2,7 @@ const fs = require('fs');
 const mmap = require('@riaskov/mmap-io');
 const { parentPort, workerData } = require('worker_threads');
 const os = require('os');
-
+const ZeroCopyBuffer = require('./zcbuf');
 const { filePath, startPos, length, isLastChunk } = workerData;
 
 let fd;
@@ -45,7 +45,7 @@ try {
     );
     
     // extract, convert, process
-    const dataBuffer = buffer.slice(dataOffset, dataOffset + length);
+    const dataBuffer = new ZeroCopyBuffer(buffer, dataOffset, length);
     const chunkData = dataBuffer.toString('utf8');
 
     let chunkJson = {};
