@@ -1,5 +1,5 @@
 {
   "chunkByteSize": 1048576,
-  "indexPath": "index.json",
-  "filePath": "numbers.json"
+  "indexPath": ".index.json",
+  "filePath": "data/numbers.json"
 }

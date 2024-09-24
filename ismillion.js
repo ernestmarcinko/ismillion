@@ -15,7 +15,7 @@ let index;
 
 async function initialize() {
   if (!fs.existsSync(INDEX_PATH)) {
-    const generateIndex = require('./generateIndex.js');
+    const generateIndex = require('./lib/generateIndex.js');
     await generateIndex(FILE_PATH, INDEX_PATH, CHUNK_BYTE_SIZE);
   }
 
@@ -40,7 +40,7 @@ function readChunk(chunkInfo) {
 
     return new Promise((resolve, reject) => {
         const isLastChunk = chunkInfo === index[index.length - 1];
-        const worker = new Worker(path.resolve(__dirname, 'chunkWorker.js'), {
+        const worker = new Worker(path.resolve(__dirname, 'lib/chunkWorker.js'), {
             workerData: {
                 filePath: FILE_PATH,
                 startPos: chunkInfo.startPos,
@@ -132,5 +132,5 @@ module.exports = async function(n) {
     if (!index) {
 	await initialize();
     }
-    return await isMillion(n);
+    return isMillion(n);
 };
