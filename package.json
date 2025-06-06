@@ -3,7 +3,6 @@
 	"version": "1.0.1",
 	"description": "Simple and very powerful library to test if a number is one million.",
 	"main": "ismillion.js",
-	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -22,5 +21,9 @@
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/ernestmarcinko/ismillion/issues"
+	},
+	"dependencies": {
+		"@riaskov/mmap-io": "^1.4.3",
+		"lru.min": "^1.1.1"
 	}
 }
